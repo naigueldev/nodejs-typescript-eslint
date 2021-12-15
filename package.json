@@ -1,0 +1,32 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "description": "Example project",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test",
+    "start": "npm run build && node build/index.js",
+    "start:dev": "nodemon",
+    "build": "rimraf ./build && tsc",
+    "lint": "eslint . --ext .ts",
+    "lint-and-fix": "eslint . --ext .ts --fix"
+  },
+  "keywords": [
+    "nodejs",
+    "typescript",
+    "jest"
+  ],
+  "author": "Naiguel Santos",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^16.11.13",
+    "@typescript-eslint/eslint-plugin": "^5.7.0",
+    "@typescript-eslint/parser": "^5.7.0",
+    "eslint": "^8.4.1",
+    "eslint-plugin-no-loops": "^0.3.0",
+    "nodemon": "^2.0.15",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.4"
+  }
+}
